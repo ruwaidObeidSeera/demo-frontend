@@ -111,19 +111,22 @@ function UsersList() {
       </div>
 
       <dialog ref={dialogRef}>
+        <h2>Add User</h2>
         <form onSubmit={addUser}>
-          <p>
-            <label>
-              Name:
-              <input name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Age:
-              <input name="age" />
-            </label>
-          </p>
+          <div>
+            <p>
+              <label>
+                Name:
+                <input name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Age:
+                <input name="age" />
+              </label>
+            </p>
+          </div>
           <div>
             <button
               value="cancel"
