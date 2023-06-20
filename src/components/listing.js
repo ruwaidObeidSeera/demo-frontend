@@ -94,12 +94,19 @@ function UsersList() {
                       Delete
                     </button>
                     <div className="content-container">
-                      <div>
-                        <b>Name:</b> <span>{item.name}</span>
+                      <div className="name">
+                        <b>Name:</b>
+                        <span>
+                          {/* {item.name} */}
+                          {item.title}
+                        </span>
                       </div>
                       <div>
                         <b>Age:</b>
-                        <span data-testid="item-price">{item.age}</span>
+                        <span data-testid="item-price">
+                          {/* {item.age} */}
+                          {item.userId}
+                        </span>
                       </div>
                     </div>
                   </div>
